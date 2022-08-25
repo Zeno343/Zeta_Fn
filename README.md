@@ -1,4 +1,4 @@
-# Zeta_Fn
+# Zeta_OS
 It's an OS for the Teensy4.1 in Rust
 
 Install the necessary cargo components:

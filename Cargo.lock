@@ -12,6 +12,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "alloc-cortex-m"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5069e21ec61f3b243a4a4c56d920d3206e6ee86022a67c23e9fe36eb60fc1efd"
+dependencies = [
+ "cortex-m 0.7.6",
+ "linked_list_allocator",
+]
+
+[[package]]
 name = "as-slice"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -186,6 +196,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "linked_list_allocator"
+version = "0.8.11"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "822add9edb1860698b79522510da17bef885171f75aa395cff099d770c609c24"
+
+[[package]]
 name = "log"
 version = "0.4.17"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -343,6 +359,7 @@ dependencies = [
 name = "zeta_os"
 version = "0.1.0"
 dependencies = [
+ "alloc-cortex-m",
  "cortex-m 0.7.6",
  "cortex-m-rt",
  "embedded-hal",

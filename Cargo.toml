@@ -8,6 +8,7 @@ edition = "2021"
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
 embedded-hal = "0.2"
+alloc-cortex-m = "0.4"
 
 [dependencies.bsp]
 package = "teensy4-bsp"
