@@ -7,11 +7,12 @@ edition = "2021"
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
-embedded-hal = "0.2.3"
+embedded-hal = "0.2"
 
-[dependencies.teensy4-bsp]
+[dependencies.bsp]
+package = "teensy4-bsp"
 version = "0.3"
-features = ["rt"]
+features = ["rt", "usb-logging"]
 
 [profile.release.build-override]
 opt-level = 0
