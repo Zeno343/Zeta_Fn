@@ -340,7 +340,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "zeta_fn"
+name = "zeta_os"
 version = "0.1.0"
 dependencies = [
  "cortex-m 0.7.6",

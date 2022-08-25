@@ -1,5 +1,5 @@
 [package]
-name = "zeta_fn"
+name = "zeta_os"
 version = "0.1.0"
 authors = ["Zeno343"]
 edition = "2021"
