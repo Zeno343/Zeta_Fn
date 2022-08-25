@@ -1,0 +1,11 @@
+[tasks.test]
+disabled = true
+
+[tasks.build]
+command = "cargo"
+args = ["objcopy", "--release", "--", "-O", "ihex", "target/main.hex"]
+
+[tasks.flash]
+command = "teensy_loader_cli/teensy_loader_cli"
+args = ["--mcu=TEENSY41", "-w", "target/main.hex"]
+dependencies = ["build"]
